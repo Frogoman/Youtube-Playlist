@@ -15,7 +15,7 @@ seconds_pattern = re.compile(r'(\d+)S')
 
 
 # Extract playlist id from url
-url = 'https://www.youtube.com/playlist?list=PLVsEAZbuBOF_nppuJ2xBGL6Ig2zG6BDv_'
+url = 'YOUR_PLAYLIST'
 query = parse_qs(urlparse(url).query, keep_blank_values=True)
 playlist_id = query["list"][0]
 print(f'get all playlist items links from {playlist_id}')
